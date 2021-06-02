@@ -1,0 +1,37 @@
+<div class="bg-image"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1504203700686-f21e703e5f1c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1361&q=100');
+        background-repeat: no-repeat;
+        height: 91vh; filter: blur(2px);
+        -webkit-filter: blur(2px);">
+
+</div>
+<div style="padding: 5% 20%; background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%">
+  <h2>Forgot your password?</h2>
+
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field  form-group">
+      <% f.label :email %><br />
+      <p><%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true, autocomplete: "email" %></p>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Send me reset password instructions", class: "btn btn-success" %>
+    </div>
+  <% end %>
+
+  <div class="pt-2">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

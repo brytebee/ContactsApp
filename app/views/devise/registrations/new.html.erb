@@ -1,0 +1,37 @@
+<div class="bg-image"
+      style="
+        background-image: url('https://images.unsplash.com/45/QDSMoAMTYaZoXpcwBjsL__DSC0104-1.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=100');
+        background-repeat: no-repeat;
+        height: 91vh">
+  <div style="padding: 5% 35%">
+    <h2>Sign up</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field form-group">
+        <% f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email", autocomplete: "email" %>
+      </div>
+
+      <div class="field form-group pb-2">
+        <% f.label :password %><br />
+        <%= f.password_field :password, class: "form-control", placeholder: "Password", autocomplete: "new-password" %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %>
+      </div>
+
+      <div class="field form-group">
+        <% f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm password", autocomplete: "new-password" %>
+      </div>
+
+      <div class="actions"> <br>
+        <%= f.submit "Sign up", class: "btn btn-dark" %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

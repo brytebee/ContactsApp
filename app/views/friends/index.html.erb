@@ -1,0 +1,43 @@
+<div class="bg-image"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1479920252409-6e3d8e8d4866?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1290&q=100');
+        background-repeat: no-repeat;
+        height: 91vh');
+        background-repeat: no-repeat;
+        height: 91vh">
+  <% if user_signed_in? %>
+    <div style="padding: 5% 8%">
+      <table class="table table-striped table-bordered table-hover border-dark">
+        <thead class="table-dark">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Twitter</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @friends.each do |friend| %>
+            <% if friend.user == current_user %>
+              <tr>
+                <td>
+                  <%= link_to friend.first_name + ' ' + friend.last_name, friend, class:"text-decoration-none" %>
+                </td>
+                <td><%= friend.email %></td>
+                <td><%= friend.phone %></td>
+                <td><%= friend.twitter %></td>
+                <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: "Are you sure you want to delete #{friend.first_name} #{friend.last_name}?" }, class:"text-decoration-none text-danger" %></td>
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
+
+      <%= link_to 'New Friend', new_friend_path, class:"btn btn-dark" %>
+    </div>
+  <% else %>
+    <%= render 'layouts/welcome' %>
+  <% end %>
+</div>

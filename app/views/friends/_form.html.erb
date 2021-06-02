@@ -1,0 +1,46 @@
+<div style="margin: 0 30%">
+  <%= form_with(model: friend) do |form| %>
+    <% if friend.errors.any? %>
+      <div id="error_explanation">
+        <h5 class="text-warning"><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h5>
+
+        <ul class="text-danger">
+          <% friend.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="p-3 bg-secondary">
+      <div class="field form-group">
+        <%= form.text_field :first_name, class:"form-control mb-3", placeholder:"First Name" %>
+      </div>
+
+      <div class="field form-group">
+        <%= form.text_field :last_name, class:"form-control mb-3", placeholder:"Last Name" %>
+      </div>
+
+      <div class="field form-group">
+        <%= form.text_field :email, class:"form-control mb-3", placeholder:"Email eg: sample@sample.com" %>
+      </div>
+
+      <div class="field form-group">
+        <%= form.text_field :phone, class:"form-control mb-3", placeholder:"Phone eg: 08012345678" %>
+      </div>
+
+      <div class="field form-group">
+        <%= form.text_field :twitter, class:"form-control mb-3", placeholder:"Twitter handle eg: @rudeboy" %>
+      </div>
+
+      <div class="field form-group">
+      <%= form.number_field :user_id, id: :friend_user_id, class:"form-control mb-3", value: current_user.id, type: :hidden %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit class:"btn btn-dark" %>
+      </div>
+    </div>
+  <% end %>
+
+</div>

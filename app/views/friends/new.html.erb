@@ -1,0 +1,15 @@
+<div class="bg-image"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1479920252409-6e3d8e8d4866?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1290&q=100');
+        background-repeat: no-repeat;
+        height: 91vh">
+  <div style="padding: 3% 5%">
+    <h3 style="margin: 0 30% 20px 30%;">Add Friend</h3>
+
+    <%= render 'form', friend: @friend %>
+
+    <div style="margin: 0 30% 20px 30%;">
+      <%= link_to 'Back', friends_path, class:"btn btn-secondary mt-3" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="bg-image"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1479920252409-6e3d8e8d4866?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1290&q=100');
+        background-repeat: no-repeat;
+        height: 91vh">
+  <div style="padding: 3% 15%; text-align: center">
+    <div class="jumbotron bg-light p-5">
+      <h1 class="display-4">
+        <%= @friend.first_name %>
+        <%= @friend.last_name %>
+      </h1>
+      <p class="lead"><%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %> </p>
+      <hr class="my-5">
+      <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %>
+      <%= link_to 'Delete', @friend, method: :delete, data: { confirm: "Are you sure you want to delete #{@friend.first_name} #{@friend.last_name}?" }, class:"btn btn-danger" %>
+      <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+    </div>
+  </div>
+</div
