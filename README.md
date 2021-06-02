@@ -15,11 +15,13 @@
 
 ## Live Demo
 
-[Live Demo Link](https://repl.it/@BrightAtsighi/theenumerables#enumerable.rb)
+[Live Demo Link](https://contactz-apps.herokuapp.com/)
 
 ## screenshot
 
-![screenshot](/assets/screenshot.JPG)
+![screenshot](/app/assets/images/contactz-apps.herokuapp.com_.png)
+![screenshot](/app/assets/images/contactz-apps.herokuapp.com_ sign_in.png)
+![screenshot](/app/assets/images/contactz-apps.herokuapp.com_ sign_up.png)
 
 
 ### Prerequisites
