@@ -56,4 +56,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Shout out to John Elder [https://www.youtube.com/redirect?event=comments&redir_token=QUFFLUhqbWVMNUYxNXRXR1JfTVptMWc1WGtyMEo4R0dVd3xBQ3Jtc0tsTjRVSk1adXNqWFRHdUVkSEhMbXBHQ3NlM2Y3aWctRUkzRjkxdWRWdUlSeGZwLVo4NEIzZVdvOVdFU2RHTnpqN2lHR3pTVnhaVW41Mjd2Rm5ybHdnZF9idkx4V3hWT19tN2JGUUdpY0EyeHV1NjQ1bw&q=http%3A%2F%2Fcodemy.com%2F&stzid=Ugy83p1C1y9DYPPB8y54AaABAg] for the tutorial.
+- Shout out to John Elder [https://youtu.be/fmyvWz5TUWg] for the tutorial.
