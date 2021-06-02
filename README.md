@@ -21,10 +21,6 @@
 
 ![screenshot](/app/assets/images/contactz-apps.herokuapp.com_.png)
 
-![screenshot](/app/assets/images/contactz-apps.herokuapp.com_ sign_in.png);
-
-![screenshot](/app/assets/images/contactz-apps.herokuapp.com_ sign_up.png);
-
 
 ### Prerequisites
 
