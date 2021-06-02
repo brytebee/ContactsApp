@@ -48,7 +48,7 @@ A browser and internet connection.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Pull page](https://github.com/brytebee/ContactsApp/).
+Feel free to check the [Issue page](https://github.com/brytebee/ContactsApp/issues/new).
 
 ## Show your support
 
