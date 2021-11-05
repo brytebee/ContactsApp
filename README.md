@@ -1,9 +1,9 @@
 # ContactsApp
 ![](https://github.com/brytebee/ContactsApp)
 
-## The ContactsApp
+## Description
 
-> The ContactsApp project is build using ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x64-mingw32], Rails 6.1.3.2 and sqlite3 on development and pg on production.
+The ContactsApp project is built using Ruby, Rails, Bootstrap, Simple_form GEM, Sqlite3(development) and PostgreSQL(production). It implements fundamentals like Rails Partials, CRUD scaffold e.t.c.
 
 ## Built With
 
